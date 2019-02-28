@@ -9,7 +9,7 @@ import RecentListRight from './RecentListRight';
 import RecentCard from './RecentCard';
 import RecentGrid from './RecentGrid';
 import RecentThreeCards from './RecentThreeCards';
-
+const PageName = 'News App'
 function formatDate(d) {
   var date = d.split("T")[0];
   return moment(date).format("Do MMM YYYY")
@@ -58,7 +58,7 @@ export class HomeView extends Component {
                     <Icon name="sidebar" />
                   </Button>
                 }
-                centerComponent={<Title style={{fontSize:20,width:170}}>Diwa Media Works</Title>}
+                centerComponent={<Title style={{fontSize:20,width:170}}>{PageName}</Title>}
                 styleName="inline"
               />
               <ActivityIndicator
@@ -109,7 +109,7 @@ export class HomeView extends Component {
                   <Icon name="sidebar" />
                 </Button>
               }
-              centerComponent={<Title style={{fontSize:20,width:170}}>Diwa Media Works</Title>}
+              centerComponent={<Title style={{fontSize:20,width:170}}>{PageName}</Title>}
               styleName="inline"
             />
             <ScrollView style={{flex:1}}>
