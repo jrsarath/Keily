@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "268165840552",
+    "firebase_url": "https://diwa-media-works-fe4a7.firebaseio.com",
+    "project_id": "diwa-media-works-fe4a7",
+    "storage_bucket": "diwa-media-works-fe4a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268165840552:android:41a65de5bbe2932f",
+        "android_client_info": {
+          "package_name": "com.diwamediaworks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268165840552-2ijvndkmpqmqgu6tj9ic1ad69af5i3md.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChU3uIQfKXvueob4ERyPA0Qo6i_-OSgIc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
