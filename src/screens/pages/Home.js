@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { ScrollView,View,Text } from 'react-native';
 import { createBottomTabNavigator, createStackNavigator, createAppContainer,createDrawerNavigator,DrawerNavigator, DrawerItems, StackNavigator, SafeAreaView } from "react-navigation";
-import { CinemaScreen,FlashScreen,PoliticsScreen, FeaturesScreen, HealthScreen } from './../categories/Screens';
 import { LikedScreen, ImageScreen } from './Pages';
 import CategoriesScreen from './Categories';
 import Icon from 'react-native-vector-icons/Feather';

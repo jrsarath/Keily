@@ -4,5 +4,5 @@ Reactotron
   .configure() // controls connection & communication settings
   .useReactNative() // add all built-in react native plugins
   .connect({
-    port: 9090
+    port: 8081
   }) // let's connect!

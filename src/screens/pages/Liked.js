@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import moment from 'moment';
 import { DrawerActions, NavigationEvents} from "react-navigation";
-import { StyleSheet, TouchableOpacity, View, ScrollView, ActivityIndicator,Text } from 'react-native';
-import { Card, Row, Heading, Tile, Title, Overlay, Subtitle, Image, Caption, Button, Icon, Divider, GridRow, Screen, ListView, ImageBackground,NavigationBar } from '@shoutem/ui';
+import { StyleSheet, TouchableOpacity, View, ScrollView, ActivityIndicator } from 'react-native';
+import { Row, Title, Subtitle, Image, Caption, Button, Icon, Screen, NavigationBar } from '@shoutem/ui';
 import { openDatabase } from 'react-native-sqlite-storage';
 import Config from './../../Config';
 var db = openDatabase({name: 'db', createFromLocation : "~posts.sqlite"});

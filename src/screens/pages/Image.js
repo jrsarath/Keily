@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import { StyleSheet, TouchableOpacity, View, ScrollView, ActivityIndicator,Text } from 'react-native';
-import { Card, Heading, Tile, Title, Overlay, Subtitle, Image, Caption, Button, Icon, Divider, GridRow, Screen, ListView, ImageBackground,NavigationBar } from '@shoutem/ui';
+import { StyleSheet, ActivityIndicator} from 'react-native';
+import { Title, Button, Icon, Screen, NavigationBar } from '@shoutem/ui';
 import ImageBrowser from 'react-native-interactive-image-gallery';
 import { DrawerActions } from "react-navigation";
 

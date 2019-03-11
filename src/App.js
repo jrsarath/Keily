@@ -1,10 +1,11 @@
 import React, {Component} from "react";
-import { View, Text } from "react-native";
+import { Linking } from "react-native";
 import { AppContainer } from './Router';
 import OneSignal from 'react-native-onesignal';
 import SplashScreen from 'react-native-smart-splash-screen';
 var Analytics = require('react-native-firebase-analytics');
-
+import DeepLinking from 'react-native-deep-linking';
+const prefix = 'https://www.diwamediaworks.com/';
 
 export default class App extends Component {
     constructor(properties) {
@@ -25,6 +26,7 @@ export default class App extends Component {
           delay: 1000,
         });
     }
+
     componentWillUnmount() {
       OneSignal.removeEventListener('received', this.onReceived);
       OneSignal.removeEventListener('opened', this.onOpened);
@@ -47,7 +49,7 @@ export default class App extends Component {
     }
   render() {
     return (
-      <AppContainer />
+      <AppContainer uriPrefix={prefix} />
     );
   }
 }

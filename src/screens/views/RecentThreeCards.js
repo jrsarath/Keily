@@ -15,14 +15,14 @@ export default class RecentThreeCards extends Component {
     render(){
       const posts = this.props.posts;
        let articles = posts.map((post, index) => {
-            if (index != 1){
+            if (index != 0){
               return(
                   <TouchableOpacity key={post.id} style={styles.customCard} 
                     onPress={() =>
                         this.props.navigation.navigate('Article',
                         {
                           post_title: post.title.rendered,
-                          post_link: post.guid.rendered,
+                          post_link: post.link,
                           post_content: post.content.rendered,
                           post_image: Config.website+"wp-content/uploads/"+post.better_featured_image.media_details.file,
                           post_date: formatDate(post.date),

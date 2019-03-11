@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { ScrollView,View,Text } from 'react-native';
 import { Image,ImageBackground } from '@shoutem/ui';
 import { createBottomTabNavigator, createStackNavigator, createAppContainer,createDrawerNavigator,DrawerNavigator, DrawerItems, StackNavigator, SafeAreaView } from "react-navigation";
-import { CinemaScreen,FlashScreen,PoliticsScreen, FeaturesScreen, HealthScreen } from './screens/categories/Screens';
 import HomeScreen from './screens/pages/Home';
 import {LikedScreen} from './screens/pages/Liked';
 import { SinglePost } from './screens/pages/SinglePost';
@@ -88,9 +87,13 @@ const BaseStack = createStackNavigator({
       DrawerNav: { screen: DrawerNav },
       Home: { screen: HomeScreen },
       Category: { screen: CategoryView },
-      Article: { screen: SinglePost},
-      Liked: { screen: LikedScreen}
+      Article: {
+        screen: SinglePost,
+        path: 'article/:masterid',
+      },
+      Liked: { screen: LikedScreen }
   },{
     headerMode: 'none'
 });
+
 export const AppContainer = createAppContainer(BaseStack);

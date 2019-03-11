@@ -76,6 +76,8 @@
 		20FC47D3710C4E0A9EFBE4F3 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 154404B7BE474A8FA6CC656C /* libRNSVG.a */; };
 		70553F5F8E10417A9B677551 /* libRNSVG-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0B5E9B3BED4C688F62DDA3 /* libRNSVG-tvOS.a */; };
 		89661FC157F341F797ACA0C9 /* libSQLite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2928FD97D673449B84A094B6 /* libSQLite.a */; };
+		B7ACE132C7F14B2E96BF77C0 /* libRNFetchBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62661D6CAD6D4A80B1F65901 /* libRNFetchBlob.a */; };
+		9F60BD43140E4090BFC449EA /* libFastImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3926C9DF234F6281EB615B /* libFastImage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -431,6 +433,10 @@
 		2F0B5E9B3BED4C688F62DDA3 /* libRNSVG-tvOS.a */ = {isa = PBXFileReference; name = "libRNSVG-tvOS.a"; path = "libRNSVG-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		2B8006320AD24B29B3E67076 /* SQLite.xcodeproj */ = {isa = PBXFileReference; name = "SQLite.xcodeproj"; path = "../node_modules/react-native-sqlite-storage/src/ios/SQLite.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		2928FD97D673449B84A094B6 /* libSQLite.a */ = {isa = PBXFileReference; name = "libSQLite.a"; path = "libSQLite.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		E1E49CC92DAC418788C3B515 /* RNFetchBlob.xcodeproj */ = {isa = PBXFileReference; name = "RNFetchBlob.xcodeproj"; path = "../node_modules/react-native-fetch-blob/ios/RNFetchBlob.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		62661D6CAD6D4A80B1F65901 /* libRNFetchBlob.a */ = {isa = PBXFileReference; name = "libRNFetchBlob.a"; path = "libRNFetchBlob.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		C9ED2108F52543D9A9B29E0E /* FastImage.xcodeproj */ = {isa = PBXFileReference; name = "FastImage.xcodeproj"; path = "../node_modules/react-native-fast-image/ios/FastImage.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		3D3926C9DF234F6281EB615B /* libFastImage.a */ = {isa = PBXFileReference; name = "libFastImage.a"; path = "libFastImage.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -469,6 +475,8 @@
 				9EE01BC9A2944E6AA11CA2C5 /* libRNIKInteractiveImageLibrary.a in Frameworks */,
 				20FC47D3710C4E0A9EFBE4F3 /* libRNSVG.a in Frameworks */,
 				89661FC157F341F797ACA0C9 /* libSQLite.a in Frameworks */,
+				B7ACE132C7F14B2E96BF77C0 /* libRNFetchBlob.a in Frameworks */,
+				9F60BD43140E4090BFC449EA /* libFastImage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,6 +676,8 @@
 				9656BA81F70645B0B6862425 /* RNIKInteractiveImageLibrary.xcodeproj */,
 				4F653CBEA9DD4019A718564E /* RNSVG.xcodeproj */,
 				2B8006320AD24B29B3E67076 /* SQLite.xcodeproj */,
+				E1E49CC92DAC418788C3B515 /* RNFetchBlob.xcodeproj */,
+				C9ED2108F52543D9A9B29E0E /* FastImage.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1369,6 +1379,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1383,6 +1395,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-interactive-image-gallery\ios",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-sqlite-storage\src\ios",
+					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-fast-image\ios\FastImage/**",
 				);
 			};
 			name = Debug;
@@ -1417,6 +1431,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1431,6 +1447,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-interactive-image-gallery\ios",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-sqlite-storage\src\ios",
+					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-fast-image\ios\FastImage/**",
 				);
 			};
 			name = Release;
@@ -1464,6 +1482,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-interactive-image-gallery\ios",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-sqlite-storage\src\ios",
+					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-fast-image\ios\FastImage/**",
 				);
 			};
 			name = Debug;
@@ -1496,6 +1516,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-interactive-image-gallery\ios",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-sqlite-storage\src\ios",
+					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-fast-image\ios\FastImage/**",
 				);
 			};
 			name = Release;
@@ -1538,6 +1560,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1552,6 +1576,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-interactive-image-gallery\ios",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-sqlite-storage\src\ios",
+					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-fast-image\ios\FastImage/**",
 				);
 			};
 			name = Debug;
@@ -1594,6 +1620,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1608,6 +1636,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-interactive-image-gallery\ios",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-sqlite-storage\src\ios",
+					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-fast-image\ios\FastImage/**",
 				);
 			};
 			name = Release;
@@ -1649,6 +1679,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1663,6 +1695,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-interactive-image-gallery\ios",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-sqlite-storage\src\ios",
+					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-fast-image\ios\FastImage/**",
 				);
 			};
 			name = Debug;
@@ -1704,6 +1738,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1718,6 +1754,8 @@
 					"$(SRCROOT)\..\node_modules\react-native-interactive-image-gallery\ios",
 					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-sqlite-storage\src\ios",
+					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-fast-image\ios\FastImage/**",
 				);
 			};
 			name = Release;
