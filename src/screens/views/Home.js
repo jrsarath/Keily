@@ -11,6 +11,8 @@ import RecentGrid from './RecentGrid';
 import RecentThreeCards from './RecentThreeCards';
 import HomeCategoriesListView from './HomeCategories'
 
+const PageName = "Diwa Media Works";
+
 function formatDate(d) {
   var date = d.split("T")[0];
   return moment(date).format("Do MMM YYYY")
@@ -148,7 +150,7 @@ export class HomeView extends Component {
                   </Button>
                 </Row>
                 <Layout posts={this.state.posts} navigation={this.props.navigation} />
-                <HomeCategoriesListView 
+                <HomeCategoriesListView
                   flash={this.state.flash}
                   health={this.state.health}
                   politics={this.state.politics}
@@ -160,7 +162,7 @@ export class HomeView extends Component {
                   animationType="slide"
                   transparent={true}
                   visible={this.state.modalVisible}
-                  
+
                 >
                     <View style={styles.mod}>
                       <View style={styles.modal}>
@@ -214,7 +216,7 @@ export class HomeView extends Component {
                     <Icon name="sidebar" />
                   </Button>
                 }
-                centerComponent={<Title style={{fontSize:20,width:170}}>Diwa Media Works</Title>}
+                centerComponent={<Title style={{fontSize:20,width:170}}>{PageName}</Title>}
                 styleName="inline"
               />
               <ActivityIndicator
@@ -236,8 +238,8 @@ const styles = StyleSheet.create({
     height: 80
   },
   headerRow: {
-    width: '100%', 
-    flex: 1, 
+    width: '100%',
+    flex: 1,
     flexDirection: 'column',
     justifyContent: 'space-between'
   },
