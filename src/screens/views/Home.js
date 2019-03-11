@@ -10,7 +10,6 @@ import RecentCard from './RecentCard';
 import RecentGrid from './RecentGrid';
 import RecentThreeCards from './RecentThreeCards';
 import HomeCategoriesListView from './HomeCategories'
-
 const PageName = "Diwa Media Works";
 
 function formatDate(d) {
