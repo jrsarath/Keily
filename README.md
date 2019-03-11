@@ -4,6 +4,7 @@
 Buy me a cup of coffee :heart: <br>
 [https://www.instamojo.com/@jrsarath](https://www.instamojo.com/@jrsarath)
 
+<hr>
 
 MIT License
 
